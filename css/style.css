@@ -1016,6 +1016,9 @@ header.on .logo {
 @media (hover:hover) {}
 
 @media (max-width:1024px) {
+    .Stack-bg{
+        display: none;
+    }
     .section.Stack::after {
         display: block;
     }

@@ -21,7 +21,7 @@ $(document).ready(function () {
     scrollOverflow: true,
     scrollBar: false,
     anchors: ['main', 'about', 'Stack', 'web', 'Contact', 'footer'],
-    onLeave : function (index, destination, direction){
+    onLeave : function (destination){
 			if (destination == 6){
 				$('#fp-nav').css("display", "none");
 			} else {
@@ -45,10 +45,6 @@ $(function () {
     $('.move').removeClass("on");
   });
 
-});
-
-$(".swiper-slide.web").on('mouseenter mouseleave', function () {
-  $(this).toggleClass("on");
 });
 
     // 메인 텍스트 - 애니메이션
