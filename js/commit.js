@@ -22,7 +22,7 @@ $(document).ready(function () {
     scrollBar: false,
     anchors: ['main', 'about', 'Stack', 'web', 'Contact', 'footer'],
     onLeave : function (destination){
-			if (destination == 6){
+			if (window.innerWidth > 1024){
 				$('#fp-nav').css("display", "none");
 			} else {
 				$('#fp-nav').css("display", "block");
