@@ -1,12 +1,3 @@
-$(window).resize(function () {
-  if (window.innerWidth > 1024) {  // 다바이스 크기가 1024이상일때 
-    $('#fp-nav').css("display", "block");
-  } else {
-    $('#fp-nav').css("display", "none");
-  }
-
-}).resize(); 
-
 $(document).ready(function () {
   $('#fullpage').fullpage({
     //options here
@@ -21,13 +12,6 @@ $(document).ready(function () {
     scrollOverflow: true,
     scrollBar: false,
     anchors: ['main', 'about', 'Stack', 'web', 'Contact', 'footer'],
-    onLeave : function (destination){
-			if (window.innerWidth > 1024){
-				$('#fp-nav').css("display", "none");
-			} else {
-				$('#fp-nav').css("display", "block");
-			}
-		}
   });
 });
 
@@ -85,3 +69,10 @@ $(function () {
 
     // 초기 실행
     setTimeout(typing, 1000) ;
+
+    $(window).resize(function () {
+      if (window.innerWidth > 1024) {  // 다바이스 크기가 1024이상일때 
+      } else {
+      }
+    
+    }).resize(); 
