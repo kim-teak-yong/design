@@ -240,6 +240,10 @@ footer{
     .headerInner{
         padding: 0 3.2rem;
     }
+    .info ul li span{
+        display: block;
+        margin-bottom: 0.6rem;
+    }
 }
 
 @media (max-width:414px){

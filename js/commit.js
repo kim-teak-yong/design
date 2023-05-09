@@ -8,7 +8,7 @@ $(document).ready(function () {
     scrollBar: false,
     navigationPosition: 'left',
     scrollingSpeed: 1200,
-    responsiveWidth: 1024,//풀페이지가 768px 에서는 일반홈페이지처럼 스크롤
+    responsiveWidth: 1024,//풀페이지가 1024px 에서는 일반홈페이지처럼 스크롤
     scrollOverflow: true,
     scrollBar: false,
     anchors: ['main', 'about', 'Stack', 'web', 'Contact', 'footer'],
